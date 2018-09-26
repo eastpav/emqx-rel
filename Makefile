@@ -10,7 +10,7 @@ DEPS += emqttd emq_modules emq_dashboard emq_retainer emq_recon emq_reloader \
         emq_auth_clientid emq_auth_username emq_auth_ldap emq_auth_http \
         emq_auth_mysql emq_auth_pgsql emq_auth_redis emq_auth_mongo \
         emq_sn emq_coap emq_stomp emq_plugin_template emq_web_hook \
-        emq_lua_hook emq_auth_jwt
+        emq_lua_hook emq_auth_jwt emq_store_redis
 
 # emq deps
 dep_emqttd        = git https://github.com/eastpav/emqtt v2.3.11
@@ -38,6 +38,7 @@ dep_emq_stomp = git https://github.com/emqtt/emq-stomp v2.3.11
 
 # plugin template
 dep_emq_plugin_template = git https://github.com/emqtt/emq-plugin-template v2.3.11
+dep_emq_store_redis = git https://github.com/eastpav/emq-store-redis.git
 
 # web_hook lua_hook
 dep_emq_web_hook  = git https://github.com/emqtt/emq-web-hook v2.3.11
